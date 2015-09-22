@@ -16,7 +16,7 @@ module.exports = function (grunt) {
   const pkg = this.config.data.pkg || grunt.file.readJSON('package.json')
 
   grunt.registerMultiTask('sitemap_xml', 'Grunt task for generating sitemap.xml for search engine indexing', function () {
-    let sitemap, root, url, message
+    let siteRoot
 
     const options = this.options({
       siteRoot: pkg.homepage,
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 
     // Resolve options.siteRoot, add '/' if needed
     if (options.siteRoot) {
-      root = (options.siteRoot.slice(-1) === '/') ? options.siteRoot : options.siteRoot + '/'
+      siteRoot = (options.siteRoot.slice(-1) === '/') ? options.siteRoot : options.siteRoot + '/'
     } else {
       grunt.fail.warn('Please set siteRoot variable in options or homepage property in package.json.')
     }
@@ -47,6 +47,11 @@ module.exports = function (grunt) {
 
     // Iterate over all specified file groups
     this.files.forEach(file => {
+      let sitemap
+      let url
+      let message
+      let count = 0
+
       file.src.forEach(filepath => {
         // Strip index.html
         filepath = (options.stripIndex) ? filepath.replace('index.html', '') : filepath
@@ -54,14 +59,15 @@ module.exports = function (grunt) {
         // Create XML node for each entry
         url = urlset.ele('url')
 
-        url.ele('loc', root + filepath)
+        url.ele('loc', siteRoot + filepath)
         url.ele('lastmod', options.lastMod)
         url.ele('changefreq', options.changeFreq)
         url.ele('priority', options.priority)
 
         // for debug purpose
-        message = `loc: ${root + filepath}\nlastmod: ${options.lastMod}\nchangefreq: ${options.changeFreq}\npriority: ${options.priority}\n`
+        message = `loc: ${siteRoot + filepath}\nlastmod: ${options.lastMod}\nchangefreq: ${options.changeFreq}\npriority: ${options.priority}\n`
         grunt.verbose.writeln(message)
+        count++
       })
 
       // Format XML sitemap
@@ -71,6 +77,11 @@ module.exports = function (grunt) {
 
       // Write the destination file.
       grunt.file.write(file.dest, sitemap)
+
+      // for debug purpose
+      message = `${count} ${grunt.util.pluralize(count, 'file/files')} were added to sitemap.`
+      grunt.verbose.writeln(message)
+
       // Print a success message.
       grunt.log.writeln(`File ${chalk.cyan(file.dest)} created.`)
     })
