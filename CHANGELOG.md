@@ -1,5 +1,6 @@
-## v0.1.0
-* replaced `grunt.template.today()` with `moment()` to fit `W3C Datetime` standart
+## v0.1.1
+* replaced varibale `root` with `siteRoot` since first one turns out to be a global object
+* changelog converted to markdown
 
 ## v0.1.0
 * replaced `grunt.template.today()` with `moment()` to fit `W3C Datetime` standart
