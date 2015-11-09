@@ -21,7 +21,6 @@ module.exports = function (grunt) {
     const options = this.options({
       siteRoot: pkg.homepage,
       stripIndex: true,
-      fileName: 'sitemap',
       lastMod: moment().format('YYYY-MM-DDTHH:mm:ssZ'),
       priority: '0.5',
       changeFreq: 'weekly',

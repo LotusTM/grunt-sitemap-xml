@@ -28,9 +28,8 @@ module.exports = (grunt) ->
         ]
       custom_options:
         options:
-          root: 'true',
+          siteRoot: 'true',
           stripIndex: false,
-          fileName: 'map',
           lastMod: grunt.template.today('yyyy-mm-dd'),
           priority: '0.1',
           changeFreq: 'monthly'
