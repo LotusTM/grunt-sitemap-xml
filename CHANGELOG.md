@@ -1,3 +1,9 @@
+## v0.1.2
+* added readme file
+* added rudimentary tests
+* updated `xmlbuilder` to version 4.0.0
+* removed obsolete `fileName` variable
+
 ## v0.1.1
 * replaced varibale `root` with `siteRoot` since first one turns out to be a global object
 * changelog converted to markdown
