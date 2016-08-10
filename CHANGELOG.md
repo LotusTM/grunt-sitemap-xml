@@ -1,3 +1,6 @@
+## v0.2.1
+* updated dependencies to last versions
+
 ## v0.2.0
 * updated dependencies to last versions
 * removed obsolete dependencies
