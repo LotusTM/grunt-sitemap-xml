@@ -1,3 +1,8 @@
+## v0.2.0
+* updated dependencies to last versions
+* removed obsolete dependencies
+* general clean up
+
 ## v0.1.2
 * added readme file
 * added rudimentary tests
