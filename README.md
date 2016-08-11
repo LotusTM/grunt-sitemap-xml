@@ -5,7 +5,7 @@
 > Grunt task for generating sitemap.xml
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5` and node.js `4.0.0`
+This plugin requires Grunt `~0.4.5` and Node.js `4.0.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -33,7 +33,7 @@ grunt.initConfig({
     your_target: {
       // Target-specific file lists and/or options go here.
     },
-  },
+  }
 });
 ```
 
@@ -88,6 +88,7 @@ A boolean value that is used to determine whether print the results indented wit
 ```js
 grunt.initConfig({
   sitemap_xml: {
+    build: {
       files: [
         {
           cwd: 'app/build',
@@ -95,7 +96,8 @@ grunt.initConfig({
           dest: 'app/build/sitemap.xml'
         }
       ]
-  },
+    }
+  }
 });
 ```
 
