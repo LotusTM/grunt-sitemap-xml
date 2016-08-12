@@ -38,7 +38,7 @@
   "files": [
     "tasks",
     "CHANGELOG.md",
-    "LICENSE-MIT"
+    "LICENSE"
   ],
   "directories": {
     "test": "test"
