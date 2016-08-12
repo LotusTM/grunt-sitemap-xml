@@ -1,6 +1,6 @@
 # grunt-sitemap-xml
 
-[![dependencies status](https://img.shields.io/david/LotusTM/grunt-sitemap-xml.svg?style=flat)](https://david-dm.org/LotusTM/grunt-sitemap-xml#info=dependencies)
+[![dependencies status](https://david-dm.org/LotusTM/grunt-sitemap-xml/status.svg)](https://david-dm.org/LotusTM/grunt-sitemap-xml#info=dependencies)
 
 > Grunt task for generating sitemap.xml
 
