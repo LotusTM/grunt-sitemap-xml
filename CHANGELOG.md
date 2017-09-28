@@ -4,6 +4,7 @@
 - `package.json` cleanups.
 - Added `package.json` `main` property pointing to the task file.
 - Added `snazzy` for better `standard` output.
+- Added NPM 5 lockfile.
 - Updated `.editorconfig` to be in peace with `standard` final newline rule requirement.
 - `gruntfile` is no longer written in CoffeeScript :pensive:
 - Make tests actually work.
