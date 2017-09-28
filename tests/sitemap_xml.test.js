@@ -17,4 +17,10 @@ describe('sitemap_xml task', () => {
       expect(read(config('path.customOptionsMap'))).toMatchSnapshot()
     })
   })
+
+  describe('with `trailingSlash: false` setting', () => {
+    it('should produce correct xml file', () => {
+      expect(read(config('path.noTrailingSlashMap'))).toMatchSnapshot()
+    })
+  })
 })

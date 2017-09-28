@@ -51,6 +51,12 @@ Default value: `true`
 
 A boolean value that is used to determine whether to strip index.html from the URL.
 
+#### options.trailingSlash
+Type: `Boolean`
+Default value: `true`
+
+Should trailing slash be stripped from the URL.
+
 #### options.lastMod
 Type: `String`
 Default value: `moment().format('YYYY-MM-DDTHH:mm:ssZ')`

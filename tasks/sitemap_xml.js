@@ -21,6 +21,7 @@ module.exports = function (grunt) {
     const options = this.options({
       siteRoot: pkg.homepage,
       stripIndex: true,
+      trailingSlash: true,
       lastMod: moment().format('YYYY-MM-DDTHH:mm:ssZ'),
       priority: '0.5',
       changeFreq: 'weekly',
@@ -53,7 +54,8 @@ module.exports = function (grunt) {
 
       file.src.forEach(filepath => {
         // Strip index.html
-        filepath = (options.stripIndex) ? filepath.replace('index.html', '') : filepath
+        filepath = options.stripIndex ? filepath.replace('index.html', '') : filepath
+        filepath = !options.trailingSlash ? filepath.replace(/\/$/, '') : filepath
 
         // Create XML node for each entry
         url = urlset.ele('url')
