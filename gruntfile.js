@@ -12,8 +12,10 @@ module.exports = (grunt) => {
 
     path: {
       temp: 'temp',
-      test: 'test',
-      fixtures: '<%= path.test %>/fixtures'
+      test: 'tests',
+      fixtures: '<%= path.test %>/fixtures',
+      defaultOptionsMap: '<%= path.temp %>/sitemap.xml',
+      customOptionsMap: '<%= path.temp %>/custommap.xml'
     },
 
     clean: {
@@ -26,7 +28,7 @@ module.exports = (grunt) => {
         files: [{
           cwd: '<%= path.fixtures %>',
           src: '{,**/}*.html',
-          dest: '<%= path.temp %>/sitemap.xml'
+          dest: '<%= path.defaultOptionsMap %>'
         }]
       },
       custom_options: {
@@ -41,7 +43,7 @@ module.exports = (grunt) => {
         files: [{
           cwd: '<%= path.fixtures %>',
           src: '{,**/}*.{html,htm}',
-          dest: '<%= path.temp %>/map.xml'
+          dest: '<%= path.customOptionsMap %>'
         }]
       }
     }

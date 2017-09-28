@@ -6,6 +6,7 @@
 - Added `snazzy` for better `standard` output.
 - Updated `.editorconfig` to be in peace with `standard` final newline rule requirement.
 - `gruntfile` is no longer written in CoffeeScript :pensive:
+- Make tests actually work.
 
 ## 0.2.1
 - Updated dependencies to last versions
