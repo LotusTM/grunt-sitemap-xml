@@ -15,7 +15,8 @@ module.exports = (grunt) => {
       test: 'tests',
       fixtures: '<%= path.test %>/fixtures',
       defaultOptionsMap: '<%= path.temp %>/sitemap.xml',
-      customOptionsMap: '<%= path.temp %>/custommap.xml'
+      customOptionsMap: '<%= path.temp %>/custommap.xml',
+      noTrailingSlashMap: '<%= path.temp %>/notrailingslash.xml'
     },
 
     clean: {
@@ -47,6 +48,18 @@ module.exports = (grunt) => {
           cwd: '<%= path.fixtures %>',
           src: '{,**/}*.{html,htm}',
           dest: '<%= path.customOptionsMap %>'
+        }]
+      },
+      no_trailing_slash: {
+        options: {
+          lastMod: new Date('2017-09-28').toISOString(),
+          trailingSlash: false,
+          pretty: true
+        },
+        files: [{
+          cwd: '<%= path.fixtures %>',
+          src: '{,**/}*.html',
+          dest: '<%= path.noTrailingSlashMap %>'
         }]
       }
     }
