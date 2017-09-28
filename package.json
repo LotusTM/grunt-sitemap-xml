@@ -1,17 +1,17 @@
 {
   "name": "grunt-sitemap-xml",
-  "description": "Grunt plugin for generating XML sitemaps for search engine indexing",
   "version": "0.2.1",
+  "description": "Grunt plugin for generating XML sitemaps for search engine indexing",
   "homepage": "https://github.com/LotusTM/grunt-sitemap-xml",
   "author": "LotusTM <npm@2bad.me>",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/LotusTM/grunt-sitemap-xml.git"
+    "url": "https://github.com/LotusTM/grunt-sitemap-xml.git.git"
   },
   "bugs": {
-    "url": "https://github.com/LotusTM/grunt-sitemap-xml/issues"
+    "url": "https://github.com/LotusTM/grunt-sitemap-xml.git/issues"
   },
+  "license": "MIT",
   "keywords": [
     "generator",
     "google",
@@ -35,19 +35,18 @@
     "standard": "^10.0.0-beta.0",
     "time-grunt": "^1.4.0"
   },
+  "engines": {
+    "node": ">=4.0"
+  },
   "files": [
     "tasks",
     "CHANGELOG.md",
     "LICENSE"
   ],
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "standard && grunt test"
-  },
-  "engines": {
-    "node": ">=4.0"
+    "lint": "standard",
+    "test": "npm run lint && grunt test",
+    "prepublishOnly": "npm test"
   },
   "standard": {
     "parser": "babel-eslint"
