@@ -39,9 +39,7 @@
     "node": ">=4.0"
   },
   "files": [
-    "tasks",
-    "CHANGELOG.md",
-    "LICENSE"
+    "tasks"
   ],
   "scripts": {
     "lint": "standard",
