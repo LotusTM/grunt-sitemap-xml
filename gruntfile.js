@@ -25,6 +25,9 @@ module.exports = (grunt) => {
 
     sitemap_xml: {
       default_options: {
+        options: {
+          lastMod: new Date('2017-09-28').toISOString()
+        },
         files: [{
           cwd: '<%= path.fixtures %>',
           src: '{,**/}*.html',
@@ -35,7 +38,7 @@ module.exports = (grunt) => {
         options: {
           siteRoot: 'true',
           stripIndex: false,
-          lastMod: grunt.template.today('yyyy-mm-dd'),
+          lastMod: new Date('2017-09-28').toISOString(),
           priority: '0.1',
           changeFreq: 'monthly',
           pretty: true
