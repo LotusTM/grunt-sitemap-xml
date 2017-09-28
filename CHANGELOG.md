@@ -3,6 +3,7 @@
 ## HEAD
 - `package.json` cleanups.
 - Added `package.json` `main` property pointing to the task file.
+- Added `snazzy` for better `standard` output.
 - Updated `.editorconfig` to be in peace with `standard` final newline rule requirement.
 
 ## 0.2.1
