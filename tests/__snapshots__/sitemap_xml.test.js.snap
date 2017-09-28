@@ -5,29 +5,29 @@ exports[`sitemap_xml task with custom settings should produce correct xml file 1
 <urlset xmlns=\\"http://www.sitemaps.org/schemas/sitemap/0.9\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:schemaLocation=\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\\">
   <url>
     <loc>true/pages/blog.html</loc>
-    <lastmod>2017-09-28</lastmod>
+    <lastmod>2017-09-28T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>true/pages/index.html</loc>
-    <lastmod>2017-09-28</lastmod>
+    <lastmod>2017-09-28T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>true/pages/news.html</loc>
-    <lastmod>2017-09-28</lastmod>
+    <lastmod>2017-09-28T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>true/pages/short.htm</loc>
-    <lastmod>2017-09-28</lastmod>
+    <lastmod>2017-09-28T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
 </urlset>"
 `;
 
-exports[`sitemap_xml task with default settings should produce correct xml file 1`] = `"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?><urlset xmlns=\\"http://www.sitemaps.org/schemas/sitemap/0.9\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:schemaLocation=\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\\"><url><loc>https://github.com/LotusTM/grunt-sitemap-xml/pages/blog.html</loc><lastmod>2017-09-28T14:28:33+03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://github.com/LotusTM/grunt-sitemap-xml/pages/</loc><lastmod>2017-09-28T14:28:33+03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://github.com/LotusTM/grunt-sitemap-xml/pages/news.html</loc><lastmod>2017-09-28T14:28:33+03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>"`;
+exports[`sitemap_xml task with default settings should produce correct xml file 1`] = `"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?><urlset xmlns=\\"http://www.sitemaps.org/schemas/sitemap/0.9\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:schemaLocation=\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\\"><url><loc>https://github.com/LotusTM/grunt-sitemap-xml/pages/blog.html</loc><lastmod>2017-09-28T00:00:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://github.com/LotusTM/grunt-sitemap-xml/pages/</loc><lastmod>2017-09-28T00:00:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://github.com/LotusTM/grunt-sitemap-xml/pages/news.html</loc><lastmod>2017-09-28T00:00:00.000Z</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>"`;
