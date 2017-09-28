@@ -38,6 +38,7 @@
   "engines": {
     "node": ">=4.0"
   },
+  "main": "tasks/sitemap_xml.js",
   "files": [
     "tasks"
   ],
