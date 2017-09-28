@@ -28,6 +28,8 @@ module.exports = function (grunt) {
       pretty: false
     })
 
+    if (!this.files.length) return grunt.log.error('No files specified.')
+
     // Resolve options.siteRoot, add '/' if needed
     if (options.siteRoot) {
       siteRoot = (options.siteRoot.slice(-1) === '/') ? options.siteRoot : options.siteRoot + '/'
@@ -40,8 +42,7 @@ module.exports = function (grunt) {
       version: '1.0',
       encoding: 'UTF-8'
     })
-
-    urlset.att('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9')
+      .att('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9')
       .att('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance')
       .att('xsi:schemaLocation', 'http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd')
 
@@ -52,18 +53,20 @@ module.exports = function (grunt) {
       let message
       let count = 0
 
+      if (!file.dest) return grunt.log.warn('No dest file specified')
+
       file.src.forEach(filepath => {
         // Strip index.html
         filepath = options.stripIndex ? filepath.replace('index.html', '') : filepath
         filepath = !options.trailingSlash ? filepath.replace(/\/$/, '') : filepath
 
         // Create XML node for each entry
-        url = urlset.ele('url')
+        url = urlset.node('url')
 
-        url.ele('loc', siteRoot + filepath)
-        url.ele('lastmod', options.lastMod)
-        url.ele('changefreq', options.changeFreq)
-        url.ele('priority', options.priority)
+        url.node('loc', siteRoot + filepath)
+        url.node('lastmod', options.lastMod)
+        url.node('changefreq', options.changeFreq)
+        url.node('priority', options.priority)
 
         // for debug purpose
         message = `loc: ${siteRoot + filepath}\nlastmod: ${options.lastMod}\nchangefreq: ${options.changeFreq}\npriority: ${options.priority}\n`
@@ -72,9 +75,7 @@ module.exports = function (grunt) {
       })
 
       // Format XML sitemap
-      sitemap = urlset.end({
-        pretty: options.pretty
-      })
+      sitemap = urlset.end({ pretty: options.pretty })
 
       // Write the destination file.
       grunt.file.write(file.dest, sitemap)
