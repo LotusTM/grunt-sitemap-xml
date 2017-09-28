@@ -1,5 +1,10 @@
 # Changelog
 
+## HEAD
+- `package.json` cleanups.
+- Added `package.json` `main` property pointing to the task file.
+- Updated `.editorconfig` to be in peace with `standard` final newline rule requirement.
+
 ## 0.2.1
 - Updated dependencies to last versions
 
