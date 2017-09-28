@@ -1,26 +1,28 @@
-## v0.2.1
-* updated dependencies to last versions
+# Changelog
 
-## v0.2.0
-* updated dependencies to last versions
-* removed obsolete dependencies
-* general clean up
+## 0.2.1
+- Updated dependencies to last versions
 
-## v0.1.2
-* added readme file
-* added rudimentary tests
-* updated `xmlbuilder` to version 4.0.0
-* removed obsolete `fileName` variable
+## 0.2.0
+- Updated dependencies to last versions
+- Removed obsolete dependencies
+- General clean up
 
-## v0.1.1
-* replaced varibale `root` with `siteRoot` since first one turns out to be a global object
-* changelog converted to markdown
+## 0.1.2
+- Added readme file
+- Added rudimentary tests
+- Updated `xmlbuilder` to version 4.0.0
+- Removed obsolete `fileName` variable
 
-## v0.1.0
-* replaced `grunt.template.today()` with `moment()` to fit `W3C Datetime` standart
-* allow to set custom time format #note: see [moment.js](http://momentjs.com/)
-* [js-standard-style](https://github.com/feross/standard)
-* code rewrited in ES6 and requres node v4.0.0 or higher
-* general improvements to gruntfile (coffee, jit-grunt)
-* upgraded `xmlbuilder` to 3.1.0
-* new `pretty` option #note: false by default
+## 0.1.1
+- Replaced varibale `root` with `siteRoot` since first one turns out to be a global object
+- Changelog converted to markdown
+
+## 0.1.0
+- Replaced `grunt.template.today()` with `moment()` to fit `W3C Datetime` standart
+- Allow to set custom time format #note: see [moment.js](http://momentjs.com/)
+- [js-standard-style](https://github.com/feross/standard)
+- Code rewrited in ES6 and requres node v4.0.0 or higher
+- General improvements to gruntfile (coffee, jit-grunt)
+- Upgraded `xmlbuilder` to 3.1.0
+- New `pretty` option #note: false by default
