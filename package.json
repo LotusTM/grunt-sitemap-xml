@@ -6,7 +6,7 @@
   "author": "LotusTM <npm@2bad.me>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LotusTM/grunt-sitemap-xml.git.git"
+    "url": "https://github.com/LotusTM/grunt-sitemap-xml.git"
   },
   "bugs": {
     "url": "https://github.com/LotusTM/grunt-sitemap-xml.git/issues"
