@@ -1,8 +1,9 @@
-module.exports = (grunt) => {
+module.exports = (grunt, isTest) => {
   'use strict'
 
   // Track execution time
-  require('time-grunt')(grunt)
+  // Execute only when we are _not_ in test environment, otherwise tests will never exit
+  if (!isTest) require('time-grunt')(grunt)
 
   // Load grunt tasks automatically
   require('jit-grunt')(grunt)
