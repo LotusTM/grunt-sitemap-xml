@@ -1,7 +1,7 @@
 const gt = require('grunt')
 const gruntfile = require('../../gruntfile')
 
-const grunt = gruntfile.call(gt, gt)
+const grunt = gruntfile.call(gt, gt, true)
 
 /**
  * Run Grunt instance with specified tasks as args
