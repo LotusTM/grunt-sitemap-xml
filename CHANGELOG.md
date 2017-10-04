@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 0.3.0
 - Raised minimum required Node version to `6.0`.
 - Added NPM 5 lockfile.
 - Added `trailingSlash` option with `true` as default value.
