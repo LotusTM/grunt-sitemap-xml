@@ -8,7 +8,6 @@
 'use strict'
 
 const chalk = require('chalk')
-const moment = require('moment')
 const builder = require('xmlbuilder')
 
 module.exports = function (grunt) {
@@ -22,7 +21,7 @@ module.exports = function (grunt) {
       siteRoot: pkg.homepage,
       stripIndex: true,
       trailingSlash: true,
-      lastMod: moment().format('YYYY-MM-DDTHH:mm:ssZ'),
+      lastMod: new Date().toISOString(),
       priority: '0.5',
       changeFreq: 'weekly',
       pretty: false
