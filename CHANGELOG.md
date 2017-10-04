@@ -1,6 +1,7 @@
 # Changelog
 
 ## HEAD
+- Raised minimum required Node version to `6.0`.
 - `package.json` cleanups.
 - Added `trailingSlash` option with `true` as default value. When set to `false`, all trailing slashes from URLs will be removed.
 - Added `package.json` `main` property pointing to the task file.
