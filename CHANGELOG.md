@@ -7,6 +7,7 @@
 
    When set to `false`, all trailing slashes from URLs will be removed.
 
+- Dropped `moment.js` in favor of simple `new Date().toISOString()` as a default value for `lastMod` option.
 - `package.json` cleanups.
 - Added `package.json` `main` property pointing to the task file.
 - Added `snazzy` for better `standard` output.

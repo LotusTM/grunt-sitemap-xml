@@ -24,7 +24,6 @@
   ],
   "dependencies": {
     "chalk": "^2.0.0",
-    "moment": "^2.14.1",
     "xmlbuilder": "^9.0.0"
   },
   "devDependencies": {
