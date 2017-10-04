@@ -2,14 +2,17 @@
 
 ## HEAD
 - Raised minimum required Node version to `6.0`.
+- Added NPM 5 lockfile.
+- Added `trailingSlash` option with `true` as default value.
+
+   When set to `false`, all trailing slashes from URLs will be removed.
+
 - `package.json` cleanups.
-- Added `trailingSlash` option with `true` as default value. When set to `false`, all trailing slashes from URLs will be removed.
 - Added `package.json` `main` property pointing to the task file.
 - Added `snazzy` for better `standard` output.
-- Added NPM 5 lockfile.
 - Updated `.editorconfig` to be in peace with `standard` final newline rule requirement.
 - `gruntfile` is no longer written in CoffeeScript :pensive:
-- Make tests actually work.
+- Updated tests to actually work.
 
 ## 0.2.1
 - Updated dependencies to last versions
