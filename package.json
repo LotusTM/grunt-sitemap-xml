@@ -1,6 +1,6 @@
 {
   "name": "grunt-sitemap-xml",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Grunt plugin for generating XML sitemaps for search engine indexing",
   "homepage": "https://github.com/LotusTM/grunt-sitemap-xml",
   "author": "LotusTM <npm@2bad.me>",
