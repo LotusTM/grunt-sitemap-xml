@@ -38,7 +38,7 @@
     "time-grunt": "^1.4.0"
   },
   "engines": {
-    "node": ">=4.0"
+    "node": ">=6.0"
   },
   "main": "tasks/sitemap_xml.js",
   "files": [
