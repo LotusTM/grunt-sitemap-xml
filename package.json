@@ -33,7 +33,7 @@
     "jest": "21.2.1",
     "jit-grunt": "^0.10.0",
     "snazzy": "6.0.0",
-    "standard": "^10.0.0-beta.0",
+    "standard": "^13.0.2",
     "time-grunt": "^1.4.0"
   },
   "engines": {
