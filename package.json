@@ -27,7 +27,7 @@
     "xmlbuilder": "^9.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.0",
+    "babel-eslint": "^10.0.3",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "jest": "21.2.1",
