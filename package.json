@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "chalk": "^2.0.0",
-    "xmlbuilder": "^9.0.0"
+    "xmlbuilder": "^15.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",
