@@ -23,7 +23,7 @@
     "xml"
   ],
   "dependencies": {
-    "chalk": "^2.0.0",
+    "chalk": "^4.0.0",
     "xmlbuilder": "^9.0.0"
   },
   "devDependencies": {
